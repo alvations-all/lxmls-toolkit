@@ -49,7 +49,7 @@ def l2norm(a):
   value = 0
   for i in xrange(a.shape[1]):
     value += np.dot(a[:,i],a[:,i])
-  return np.sqrt(value)
+  return value
 
 def l2norm_squared(a):
   return np.sqrt(l2norm(a))
