@@ -52,10 +52,7 @@ def l2norm(a):
   return np.sqrt(value)
 
 def l2norm_squared(a):
-  value = 0
-  for i in xrange(a.shape[1]):
-    value += np.dot(a[:,i],a[:,i])
-  return value
+  return np.sqrt(l2norm(a))
 
 #######
 ## Normalizes an array to sum to one, either column wize, or row wize or the full array.
